@@ -1,0 +1,184 @@
+/* =========================
+   ESTILO GENERAL GAME TRACKER
+   Inspirado en interfaz gamer moderna
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0a0a0a, #121212, #1a1a1a);
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+header {
+  width: 100%;
+  background: linear-gradient(90deg, #7a00ff, #00ccff);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffe97f;
+  text-shadow: 0 0 10px #ffe97f;
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* =========================
+   SECCIÓN DE JUEGOS
+========================= */
+.section-title {
+  grid-column: span 2;
+  font-size: 2rem;
+  color: #ffe97f;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #ffe97f;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #7a00ff;
+}
+
+.card h3 {
+  color: #00ccff;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #ddd;
+  line-height: 1.5;
+}
+
+/* =========================
+   BOTONES Y FORMULARIOS
+========================= */
+button,
+input[type="submit"] {
+  background: linear-gradient(90deg, #7a00ff, #00ccff);
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: 0.5rem;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: linear-gradient(90deg, #00ccff, #7a00ff);
+  box-shadow: 0 0 15px #00ccff;
+}
+
+/* =========================
+   FORMULARIOS
+========================= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.6rem;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00ccff;
+  box-shadow: 0 0 10px #00ccff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  color: #bbb;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 0.5rem;
+  }
+}

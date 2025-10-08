@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameTracker - Tu Biblioteca Gamer</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <header>
+    <h1>🎮 GameTracker</h1>
+    <p>Gestiona tu biblioteca de videojuegos y comparte reseñas</p>
+  </header>
+
+  <main>
+    <!-- Agregar Juego -->
+    <section class="add-game">
+      <h2>Agregar un nuevo juego</h2>
+      <form id="gameForm">
+        <input type="text" id="gameTitle" placeholder="Título del juego" required>
+        <input type="text" id="gamePlatform" placeholder="Plataforma (PC, PS5, Switch...)" required>
+        <textarea id="gameReview" placeholder="Escribe tu reseña..."></textarea>
+        <button type="submit">Agregar juego</button>
+      </form>
+    </section>
+
+    <!-- Lista de Juegos -->
+    <section class="library">
+      <h2>📚 Tu Biblioteca</h2>
+      <div id="gameList" class="game-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>GameTracker © 2025 - Proyecto educativo hecho con HTML, CSS y JavaScript</p>
+  </footer>
+
+  <script src="./script/index.js"></script>
+</body>
+</html>
