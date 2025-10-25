@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GameTracker</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/style2.css">
+</head>
+
+<body>
+    <div class="grain"></div>
+    <div class="wrap">
+        <header>
+            <div class="topbar">
+                <div class="brand">
+                    <div class="logo">GT</div>
+                    <div>
+                        <div style="font-weight:700;letter-spacing:1px">GAMETRACKER</div>
+                        <div style="font-size:12px;color:#bda98a">Organiza, reseña, descubre</div>
+                    </div>
+                </div>
+                <nav id="nav">
+                    <button class="nav-toggle" id="navToggle">☰</button>
+                    <ul>
+                        <li><a href="#biblioteca">Biblioteca</a></li>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#keywords">Keywords</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+                    </ul>
+                </nav>
+                <a href="#contact" class="contact-btn">Contact</a>
+            </div>
+
+            <section class="hero">
+                <div class="hero-left">
+                    <div class="eyebrow">Misterios de los Videojuegos</div>
+                    <h1>GameTracker &amp; Organiza, reseña, descubre</h1>
+                    <p class="lead">Tu plataforma para explorar y compartir opiniones de todo tu universo Gamer.</p>
+                    <div class="cta-row">
+                        <a class="btn btn-primary" href="#join">Únete</a>
+                        <a class="btn btn-outline" href="#learn">Aprende más</a>
+                    </div>
+                    <br>
+                    <div class="news">• 2025.11.03 • VideoJuegos</div>
+                </div>
+                <div class="hero-right">
+                    <div class="card-art">
+
+                        <video autoplay muted loop id="miVideo">
+                            <source src="./img/PinDown.io_@valuable826_1759940191.mp4" type="video/mp4">
+                            <source src="./img/PinDown.io_@valuable826_1759940191.mp4" type="video/webm">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                        <P>Mojin The Lost Legend-- Movie</P>
+                    </div>
+                </div>
+            </section>
+
+            <div class="info-band">
+                <div class="info-block">
+                    <h3>Characters</h3>
+                    <p>Iconos y descripciones breves de personajes.</p>
+                </div>
+                <div class="info-block">
+                    <h3>History</h3>
+                    <p>Línea temporal con eventos y textos retro.</p>
+                </div>
+                <div class="info-block">
+                    <h3>Keywords</h3>
+                    <p>Glosario con textura de papel y listados desplegables.</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="tiles" id="tiles">
+                <article class="tile" id="characters">
+                    <h4>Agregar un nuevo juego</h4>
+                    <p>Minecraft, The Last of Us y otros.</p>
+                    <form id="gameForm">
+                        <input type="text" id="gameTitle" placeholder="Título del juego" required>
+                        <input type="text" id="gamePlatform" placeholder="Plataforma (PC, PS5, Switch...)" required>
+                        <textarea id="gameReview" placeholder="Escribe tu reseña..."></textarea>
+                        <button type="submit">Agregar juego</button>
+                    </form>
+                </article>
+                <article class="tile" id="history">
+                    <h4>History</h4>
+                    <p>Una cronología visual: mapas y eventos clave.</p>
+                </article>
+                <article class="tile" id="keywords">
+                    <h4>Keywords</h4>
+                    <p>Palabras clave y artefactos.</p>
+                </article>
+            </section>
+
+            <section class="lower">
+                <div class="blog" id="blog">
+                    <h3>Blog</h3>
+                    <section class="library">
+                        <h2>📚 Tu Biblioteca</h2>
+                        <div id="gameList" class="game-list"></div>
+                    </section>
+        </main>
+
+        <section>
+            <aside class="sidebar">
+                <h3>Line Up</h3>
+                <p>Juegos recomendados y plataformas.</p>
+                <h4>Twitter</h4>
+                <p>Últimos tweets y comunidad.</p>
+            </aside>
+        </section>
+
+    </div>
+
+    <footer>
+        <div>© 2025 — Stefanny Garces Ospina. | Derechos de autor.</div>
+    </footer>
+    </div>
+    <script src="./script/indexlogin.js"></script>
+    <script src="./script/gameReview.js"></script>
+</body>
+
+</html>

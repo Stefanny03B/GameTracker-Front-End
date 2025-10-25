@@ -366,3 +366,112 @@ footer {
         display: none
     }
 }
+
+/* Estilos para el contenedor de la lista de juegos */
+.game-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Estilos para cada tarjeta de reseña */
+.game-card {
+    background-color: rgba(255, 255, 255, 0.05); /* Fondo semitransparente */
+    border: 1px solid #bda98a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.game-card h3 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 1.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.platform-tag {
+    font-size: 0.7em;
+    color: #8b8b8b;
+    font-weight: 400;
+}
+
+.review-meta {
+    font-size: 0.9em;
+    color: #bda98a;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.actions button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.edit-btn {
+    background-color: #5cb85c; /* Verde */
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #4cae4c;
+}
+
+.delete-btn {
+    background-color: #f44336; /* Rojo */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Estilos para el contenedor de votación */
+.voting-actions {
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 15px;
+}
+
+/* Estilos base para los botones de votar */
+.vote-btn {
+    padding: 8px 15px;
+    border: 1px solid #bda98a;
+    background-color: transparent;
+    color: #bda98a;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: all 0.2s ease;
+}
+
+.vote-btn:hover {
+    background-color: rgba(189, 169, 138, 0.1);
+}
+
+/* Estado activo (cuando el usuario ha votado) */
+.vote-btn.active.like {
+    background-color: #5cb85c; /* Verde para "Me Gusta" */
+    color: #fff;
+    border-color: #5cb85c;
+}
+
+.vote-btn.active.dislike {
+    background-color: #f44336; /* Rojo para "No Me Gusta" */
+    color: #fff;
+    border-color: #f44336;
+}
+
+/* Asegurar que las tarjetas de reseña se vean en main.html (si aún no tienes el estilo) */
+/* Debes copiar los estilos de .game-card de la respuesta anterior al archivo style2.css */

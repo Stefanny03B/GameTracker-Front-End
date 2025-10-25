@@ -26,7 +26,9 @@
                 <nav id="nav">
                     <button class="nav-toggle" id="navToggle">☰</button>
                     <ul>
-                        <li><a href="#characters">Characters</a></li>
+                        <li><a href="./login.html">Iniciar sesión</a></li>
+                        <li><a href="./registre.html">Registrarse</a></li>
+                        <li><a href="#biblioteca">Biblioteca</a></li>
                         <li><a href="#history">History</a></li>
                         <li><a href="#keywords">Keywords</a></li>
                         <li><a href="#blog">Blog</a></li>
@@ -100,36 +102,30 @@
 
             <section class="lower">
                 <div class="blog" id="blog">
-                    <h3>Blog</h3>
-                    <div class="blog-item">
-                        <img src="./img/blog1.jpg" alt="mini">
-                        <div>
-                            <div class="title">Evento: Concierto Temático</div>
-                            <div class="desc">Reseña y fotos del evento.</div>
-                        </div>
-                    </div>
-                    <div class="blog-item">
-                        <img src="./img/blog2.jpg" alt="mini">
-                        <div>
-                            <div class="title">Nuevo Libro de Arte</div>
-                            <div class="desc">Bocetos y conceptos exclusivos.</div>
-                        </div>
-                    </div>
-                </div>
-                <aside class="sidebar">
-                    <h3>Line Up</h3>
-                    <p>Juegos recomendados y plataformas.</p>
-                    <h4>Twitter</h4>
-                    <p>Últimos tweets y comunidad.</p>
-                </aside>
-            </section>
+                    <h2>Reseñas📚</h2>
+                    <section class="library">
+                        <div id="gameList" class="game-list"></div>
+                    </section>
         </main>
 
-        <footer>
-            <div>© 2025 — Stefanny Garces Ospina. | Derechos de autor.</div>
-        </footer>
+        <section>
+            <aside class="sidebar">
+                <h3>Line Up</h3>
+                <p>Juegos recomendados y plataformas.</p>
+                <h4>Twitter</h4>
+                <p>Últimos tweets y comunidad.</p>
+            </aside>
+        </section>
+
     </div>
-    <script src="script.js"></script>
+
+    <footer>
+        <div>© 2025 — Stefanny Garces Ospina. | Derechos de autor.</div>
+    </footer>
+    </div>
+    <script src="./script/main.js"></script>
+    <script src="./script/publicReview.js"></script>
+
 </body>
 
 </html>
